@@ -1,2 +1,49 @@
 
 Link: https://github.com/gabrielajohnson/MentalIlnessChatApp/wiki
+
+Gabriela Johnson
+MentalChat Proposal
+
+The social justice issue: I am attempting to address suicide prevention by giving people with mental illnesses a confidant to talk to to help them with their daily struggles.
+
+Project Title: MentalChat
+
+Option Chosen: Option 2
+
+App Chosen: I am choosing to create a web based app.  I will be creating it using Ruby on Rails and SQLite to hold my database of people’s interests, mental illness, username and whether or not they have a match.
+
+Project Idea: I want to create a chat app where people with mental illness can talk with others with similar mental illnesses and mutual interests.  The user would create an account or just fill out a quick survey about what mental illness they have and their interests.  They would then be matched up with someone who has a similar mental illness and similar interests to talk to. It is innovative because there are many dating apps out there but none that cater just to mentally ill people who can be matched with people based on a survey.  The goal is for the user to have someone to talk to who has similar problems and interests, and hopefully the two users will be able to help each other get through their daily problems. This will address the social justice issue because it will give mentally ill people another place to seek support.
+
+Algorithm: I will be creating an algorithm that takes the entered interests of the user and tries to find another user with the same/similar mental illness and 4-5 of the same interests.  The user will first enter/check off their mental illness, check off their general interests in the survey, then they can also write in some answers like favorite movies, tv shows and books.  This information will be saved in the SQL Database along with their username and status of matches.  When looking for a match, the algorithm will iterate through every line of the database that contains other users and their interests.  If there are more than 4-5 matches on a line, that user will be added to an array.  After iterating through every user, the array of users will be displayed to the initial user looking for a match.  That user will then be able to pick which one of their matches to chat with.
+
+Data Structure: I will be saving the user information to an SQL database.  For every user saved to a line, there will be a column that saves their username, their mental illness, at least 5 columns to hold their interests, and a column that holds their number of matches.  On the backend each user will have an array with their saved matches that is created by iterating through the database of users.
+
+New software engineering concepts you expect to learn or reinforce: I expect to learn more about Ruby on Rails and SQLite since I have used them before but never at this level.  I have also never made a chat application before so I’m curious as to how I’ll start that.  I expect to utilize one of the many process models we have learned about, such as the waterfall or incremental models.
+
+Use case diagram:
+
+
+
+
+
+
+
+
+A plan for how you will learn the language(s) / platform(s) you will use in this project:
+I plan on using the code academy tutorials to review Ruby on Rails and SQL.  I will also look up tutorials on how to make a chat app, and look at other dating apps that may use an algorithm to match up users with each other.
+	
+Github Link: https://github.com/gabrielajohnson/MentalIlnessChatApp
+
+
+Open Source
+
+Open Source License
+
+
+All of these licenses are pretty similar but they do have different guidelines and restrictions. For example, the Apache license ​​is ​​free ​​to ​​use,​​ modify, ​​distribute ​​and ​​sell ​​Apache ​​Licensed ​​Software ​​without worrying ​​about ​​the ​​use ​​of ​​software. Apache works well for organizations or projects that are larger and managing more contributors, but don’t care about others commercializing the work.  However, when using the Apache license ​​​if ​​there​​ are any problems​​ with​​ the ​​software ​​the ​​licensee is liable, not Apache. If you are concerned about patents, this license would be the one for you.
+The MIT license is completely ​​free ​​to ​​use, ​​change ​​and​​ redistribute and its conditions require the protection of copyright and license notices. Authorized works and larger works might be distributed under various terms and without source code.  However, this puts restrictions on the eventual end users who end up using the software, for example they might have to watch advertisements if other people who worked on the code put them. If you want a simple and permissive license, and have a project that you want to make easy to share, this would be the best option.
+  The GNU​​ ‘General Public ​​License’ ​​gives ​​users ​​freedom ​​to ​​run, ​​study, ​​and ​​modify ​​software.  The GNU is a license that requires anyone who distributes your code to make the source available under the same terms. If you have a project where you care about sharing improvements on the code, this license would be the best.
+
+License I chose: MIT
+I chose this license because it was simple and straight to the point and only requires me to preserve the copyright and license notices.  It was also less wordy than the other two licenses so I knew immediately what I was getting with this license. You are allowed to do anything you want with MIT-licensed code, as long as you include the original license somewhere in your derivative.	
+
