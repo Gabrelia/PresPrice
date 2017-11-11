@@ -1,0 +1,23 @@
+// Place all the styles related to the search controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#search-results{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+#search{
+    text-align:center;
+    color:white;
+}
+
+#search_home{
+    margin-top:0px;
+}
+
+table{
+    width:100%;
+    font-family:arial;
+    font-size:20px;
+}

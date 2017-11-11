@@ -1,0 +1,32 @@
+<!-- Name: Gabby Johnson
+# Course: CSC 415
+# Semester: Fall 2017
+# Instructor: Dr. Pulimood 
+# Project name: PresPrice
+# Description: The app is intended to provide the cheapest price of a medicine to users
+# Filename: searchbar2.html.erb
+# Description: To display search results for searching for multiple medicines
+# Last modified on: 11/10/17 -->
+
+<div class="main">
+  <div class="container">
+    <div id = "search2-home">
+
+  <div id = "nav">
+    <a href = "home">Log Out</a>
+  </div>
+    	<h1>PresPrice</h1>
+    <div id = "search">
+    	<%= form_tag(home_path method: :get) do %>
+  		Medicine1 <%= text_field_tag :medicine_price %>
+      <% end %>
+      <%= form_tag(home_path method: :get) do %>
+      Medicine2 <%= text_field_tag :medicine_price %>
+  		<!--<%= submit_tag 'Search' %>-->
+		<% end %>
+
+    <a href = "searchresults2">Search</a>
+	</div>
+    </div>
+  </div>
+</div>
