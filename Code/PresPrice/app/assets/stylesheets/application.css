@@ -27,8 +27,18 @@ a{
 }
 
 input{
-    border-radius:20px;
+    border-radius:10px;
     width:30%;
     height:30px;
     margin:5px;
+    border:none;
+}
+
+.header{
+    background-color:#43dafd;
+}
+
+li{
+    display:inline;
+    color:white;
 }

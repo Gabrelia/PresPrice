@@ -11,20 +11,20 @@
 class PagesController < ApplicationController
 
 	def new
-		@medicine = medicine.new
+		@searches = Search.new
 	end
 
 	def home
-		if params[:medicine]
-    		@medicine = Medicine.where('medicine LIKE ?', "%#{params[:medicine]}%")
+		#if params[:medicine]
+    	#	@searches = Search.where('medicine LIKE ?', "%#{params[:medicine]}%")
   		#else
     	#	@medicine = Medicine.all
-  		end
+  		#end
 	end
 
-	def home_params
-  params.require(:medicine).permit(:store, :medicine_price)
-end
+	#def home_params
+ #params.require(:medicine).permit(:store, :medicine_price)
+#end
 
 	def signup
 

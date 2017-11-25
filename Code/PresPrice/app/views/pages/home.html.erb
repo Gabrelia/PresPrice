@@ -8,20 +8,21 @@
 # Description: To provide a log in page for the user to search medicines
 # Last modified on: 11/10/17 -->
 <div class="main">
-  <div class="container">
-    <div id = "nav">
+  <div class="login">
+    <div class="container">
+        <div id = "nav">
       <a href = "signup">Sign Up</a>
-    </div>
-
-    <div id = "home">
-    	<h1>PresPrice</h1>
-    <div id = "logIn">
-  		<input type="text" value="username"><br>
-      <input type="text" value="password"><br>
-  		<a href = "search">Log In</a>
-
-
-	</div>
+        </div>
+      <div id = "home">
+        <h1>PresPrice</h1>
+      <div class="form">      
+        <%= form_for(:session, url: login_path) do |f| %> 
+          <%= f.email_field :email, :placeholder => "Email" %> <br>
+          <%= f.password_field :password, :placeholder => "Password" %> <br> 
+          <%= f.submit "Log in", class: "btn-submit" %>
+      
+    <% end %>
+    
     </div>
   </div>
 </div>

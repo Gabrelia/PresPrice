@@ -10,13 +10,18 @@
 
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-   
 
-   get 'home' => 'pages#home'
+
+   #get 'home' => 'pages#home'
+   get 'signup'  => 'users#new'
+   get '/login'  => 'sessions#new'
+   post 'login' => 'sessions#create'
+   delete 'logout' => 'sessions#destroy' 
+      resources :users
    root 'pages#home'
    get 'search' => 'search#searchbar'
    get 'results' => 'search#index'
-   get 'signup' => 'pages#signup'
+   #get 'signup' => 'pages#signup'
    get 'savedsearches' => 'pages#savedsearches'
    get 'searchtwo' => 'search#searchbar2'
    get 'searchresults2' => 'search#searchresults2'
