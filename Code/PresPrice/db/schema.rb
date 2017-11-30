@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171124214650) do
+ActiveRecord::Schema.define(version: 20171129195906) do
+
+  create_table "medicines", force: :cascade do |t|
+    t.string   "name"
+    t.decimal  "walmart_price"
+    t.decimal  "cvs_price"
+    t.decimal  "walgreens_price"
+    t.decimal  "riteaid_price"
+    t.string   "generic"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
   create_table "searches", force: :cascade do |t|
     t.string   "medicine"

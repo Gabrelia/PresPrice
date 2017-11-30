@@ -1,0 +1,14 @@
+<p>
+  <b>Name:</b>
+  <%= @search.name %>
+</p>
+<p>
+  <b>Price:</b>
+  <%= @search.price %>
+</p>
+<p>
+  <b>Search:</b>
+  <%= @search.category && @search.medicine.name %>
+</p>
+<%= link_to 'Edit', edit_medicine_path(@medicine) %> |
+<%= link_to 'Back', medicines_path %>

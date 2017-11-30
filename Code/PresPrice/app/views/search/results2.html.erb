@@ -1,0 +1,36 @@
+<% if @medicines.blank? %>
+	<h4> There are no scholarships that match your query </h4>
+<% else %>
+  <table class="table table-striped">
+    <tr>
+      <th><%= sort_link "name" %></th>
+      <th><%= sort_link "walmart_price" %></th>
+      <th><%= sort_link "cvs_price" %></th>
+      <th><%= sort_link "walgreens_price" %></th>
+      <th><%= sort_link "riteaid_price" %></th>
+      <th><%= sort_link "generic" %></th>
+    </tr>
+    <% @medicines.each do |medicine| %>
+      <tr>
+        <td><%= medicine.name %></td>
+	  <td><%= medicine.walmart_price  %></td>
+	  <td><%= medicine.cvs_price  %></td>
+	  <td><%= medicine.walgreens_price  %></td>
+	  <td><%= medicine.riteaid_price %></td>
+      <td><%= medicine.generic %></td>
+      </tr>
+    <% end %>
+
+        <% @medicines.each do |medicine| %>
+      <tr>
+        <td><%= medicine.name %></td>
+    <td><%= medicine.walmart_price  %></td>
+    <td><%= medicine.cvs_price  %></td>
+    <td><%= medicine.walgreens_price  %></td>
+    <td><%= medicine.riteaid_price %></td>
+      <td><%= medicine.generic %></td>
+      </tr>
+    <% end %>
+  </table> 
+<% end %>
+
