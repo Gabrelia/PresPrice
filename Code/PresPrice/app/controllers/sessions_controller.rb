@@ -6,15 +6,15 @@ class SessionsController < ApplicationController
   		@user = User.find_by_email(params[:session][:email])
   	 
   	 if params[:session][:email].blank? || params[:session][:password].blank?
-              redirect_to '/'
+              redirect_to '/searchbar'
               return
      end 
 
 	  if @user && @user.authenticate(params[:session][:password])
 	    session[:user_id] = @user.id
-	    redirect_to '/search'
+	    redirect_to '/searchbar'
 	  else
-	    redirect_to 'login'
+	    redirect_to '/login'
 		  end 
 	end
 
