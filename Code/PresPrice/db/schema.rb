@@ -23,17 +23,6 @@ ActiveRecord::Schema.define(version: 20171129195906) do
     t.datetime "updated_at",      null: false
   end
 
-  create_table "searches", force: :cascade do |t|
-    t.string   "medicine"
-    t.decimal  "walmart_price"
-    t.decimal  "walgreens_price"
-    t.decimal  "cvs_price"
-    t.decimal  "riteaid_price"
-    t.string   "generic"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"

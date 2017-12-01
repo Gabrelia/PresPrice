@@ -1,20 +1,57 @@
-<div class="login">
+<!--
+# Name: Gabby Johnson
+# Course: CSC 415
+# Semester: Fall 2017
+# Instructor: Dr. Pulimood 
+# Project name: PresPrice
+# Description: The app is intended to provide the cheapest price of a medicine to users
+# Filename: new.html.erb
+# Description: To provide a form for the user to signup for the PresPrice application, also validates input
+# Last modified on: 11/30/17
+-->
+<%= form_for @user, :html=> {:class => "form"} do |f| %>
+<!--Prints out errors for form input -->
+<% if @user.errors.any? %>
+<!--Iterates through error messages-->
+
+     <div id="container">
+        <% flash.each do |key, value| %>
+           <div class="<%= flash_class(key) %>">
+                <%= value %>
+           </div>
+        <% end %>
+  <% @user.errors.full_messages.each_with_index do |message| %>
+        <%= message %><br>
+      <%end%>
+  <!--Displays Flash messages at the top of the page-->
+   <% end %> 
+
+
+  <div class="login">
   <div class="container">
     <div class="form">
 
     <h1>Sign up</h1>
 <div style = "text-align:center">
-    <%= form_for(@user) do |f| %>
+    <!--Parameters for sign up form-->
       <%= f.text_field :first_name, :placeholder => "First name" %><br>
       <%= f.text_field :last_name, :placeholder => "Last name" %><br>
       <%= f.email_field :email, :placeholder => "Email" %><br>
       <%= f.password_field :password, :placeholder => "Password" %><br>
       <%= f.password_field :password_confirmation, :placeholder => "Confirm Password" %><br>
-      <%= f.submit "Create an account", class: "btn-submit" %>
-      
-    <% end %>
+       <!--Submit form-->
+       <input type="submit" class="buttoncolor" style="margin-right:-12px"><%= link_to '', new_user_path, data: {modal: true} %></input>      
+    
 </div>
   
     </div>
   </div>
 </div>
+
+<% end %> 
+      
+       
+    
+       
+
+

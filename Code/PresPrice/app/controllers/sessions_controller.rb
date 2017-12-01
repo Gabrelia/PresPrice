@@ -1,3 +1,12 @@
+# Name: Gabby Johnson
+# Course: CSC 415
+# Semester: Fall 2017
+# Instructor: Dr. Pulimood 
+# Project name: PresPrice
+# Description: The app is intended to provide the cheapest price of a medicine to users
+# Filename: sessions_controller.rb
+# Description: Validates if user is logged in or not.  If they are they are redirected to the main search page.
+# Last modified on: 11/30/17
 class SessionsController < ApplicationController
 	def new 
 	end

@@ -21,9 +21,16 @@
 
 a{
     text-decoration: none;
-    color:black;
+    color:white;
     font-family:arial;
+    font-weight:bold;
+    font-size:20px;
     padding:10px;
+}
+
+a:hover{
+  color:lightgrey;
+  text-decoration:none;
 }
 
 input{
@@ -34,13 +41,27 @@ input{
     border:none;
 }
 
+h1{
+  color:white;
+  font-family:arial;
+}
+
 .header{
     background-color:#43dafd;
 }
 
 li{
     display:inline;
-    color:black;
+    color:white;
+    text-decoration: none;
+    font-family:arial;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.buttoncolor{
+  background-color:#3770a0;
+  color:white;
 }
 /****************************************/
 /*Search Stuff*/
@@ -115,4 +136,8 @@ form .field, form .actions {
 .product h2 {
   font-size: 16px;
   margin-bottom: 2px;
+}
+
+.footer{
+  color:white;
 }

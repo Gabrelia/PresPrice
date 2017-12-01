@@ -1,16 +1,28 @@
+<!--
+# Name: Gabby Johnson
+# Course: CSC 415
+# Semester: Fall 2017
+# Instructor: Dr. Pulimood 
+# Project name: PresPrice
+# Description: The app is intended to provide the cheapest price of a medicine to users
+# Filename: new.html.erb
+# Description: To provide a form for the user to login the PresPrice application
+# Last modified on: 11/30/17
+-->
 <div class="main">
   <div class="login">
     <div class="container">
-        <div id = "nav">
-
-        </div>
       <div id = "home">
         <h1>PresPrice</h1>
       <div class="form">      
+       <!--Form name-->
         <%= form_for(:session, url: login_path) do |f| %> 
+        <!--Email Parameter-->
           <%= f.email_field :email, :placeholder => "Email" %> <br>
+          <!--Password Parameter-->
           <%= f.password_field :password, :placeholder => "Password" %> <br> 
-          <%= f.submit "Log in", class: "btn-submit" %>
+          <!--Submit the form-->
+          <%= f.submit "Log in", class: "btn-submit", class: "buttoncolor" %>
       
     <% end %>
     
