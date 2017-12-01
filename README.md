@@ -12,6 +12,6 @@ rails -v Rails 5.1.4
 
 This will tell you what version you have installed.
 
-Next, download the PresPrice repository and change to that directory in your terminal. You will need to rake the database to have access to the user accounts and medicines tables so enter rake db:seed then rake db:migrate into the terminal.
+Next, download the PresPrice repository and change to that directory in your terminal. 
 
 After you have done this enter rails server into terminal and go to http://localhost:3000  in your browser.  You should now be able to access the site.  The homepage will be a blue screen with a login form.
