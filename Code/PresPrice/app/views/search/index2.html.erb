@@ -1,3 +1,14 @@
+<!--
+# Name: Gabby Johnson
+# Course: CSC 415
+# Semester: Fall 2017
+# Instructor: Dr. Pulimood 
+# Project name: PresPrice
+# Description: The app is intended to provide the cheapest price of a medicine to users
+# Filename: index2.html.erb
+# Description: Take two parameters to search for separate medicines
+# Last modified on: 11/30/17-->
+
 <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -8,25 +19,19 @@
 <div class="main">
   <div class="login">
     <div class="container">
-        <div id = "nav">
-            <a href = "searchbar">Search</a>
-        </div>
       <div id = "home">
-  <h1>PresPrice</h1>
-    <div class="form">
-           <%= form_tag(search_path, :method => "get", id: "search-form") do %>
-            <%= text_field_tag :search1, params[:search1], placeholder: "Search medicine 1" %><br>
-            <%= text_field_tag :search2, params[:search2], placeholder: "Search medicine 2" %><br>
-            <%= submit_tag "Search", :name => nil %>
-           <% end %>
-           <li><a href = "searchbar">Search 1</a></li>
-        </div>
-
-      
-    
-    </div>
-  </div>
-</div>
+		  <h1>PresPrice</h1>
+		    <div class="form">
+		           <%= form_tag(search2_path, :method => "get", id: "search-form") do %>
+		            <%= text_field_tag :search1, params[:search1], placeholder: "Search medicine 1" %><br>
+		            <%= text_field_tag :search2, params[:search2], placeholder: "Search medicine 2" %><br>
+		            <%= submit_tag "Search", class: "buttoncolor", :name => nil %>
+		           <% end %>
+		           <li><a href = "searchbar">Search 1 Medication</a></li>
+        	</div>   
+	    </div>
+	  </div>
+	</div>
         
 
 <footer class="footer">

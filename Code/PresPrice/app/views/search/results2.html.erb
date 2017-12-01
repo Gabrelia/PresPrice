@@ -1,36 +1,73 @@
-<% if @medicines.blank? %>
-	<h4> There are no scholarships that match your query </h4>
-<% else %>
-  <table class="table table-striped">
-    <tr>
-      <th><%= sort_link "name" %></th>
-      <th><%= sort_link "walmart_price" %></th>
-      <th><%= sort_link "cvs_price" %></th>
-      <th><%= sort_link "walgreens_price" %></th>
-      <th><%= sort_link "riteaid_price" %></th>
-      <th><%= sort_link "generic" %></th>
-    </tr>
-    <% @medicines.each do |medicine| %>
-      <tr>
-        <td><%= medicine.name %></td>
-	  <td><%= medicine.walmart_price  %></td>
-	  <td><%= medicine.cvs_price  %></td>
-	  <td><%= medicine.walgreens_price  %></td>
-	  <td><%= medicine.riteaid_price %></td>
-      <td><%= medicine.generic %></td>
-      </tr>
-    <% end %>
+<!--
+# Name: Gabby Johnson
+# Course: CSC 415
+# Semester: Fall 2017
+# Instructor: Dr. Pulimood 
+# Project name: PresPrice
+# Description: The app is intended to provide the cheapest price of a medicine to users
+# Filename: results2.html.erb
+# Description: Display column headings and iterate through Medicine Items Found through search
+# Last modified on: 11/30/17-->
+  <% if @medicines1.blank? %>
+      <h4> There are no scholarships that match your query </h4>
+  <% else %>
+    <h4>Medicine 1 Results</h4> 
+        <table class="table table-striped">
+          <tr>
+            <th>Name</th>
+            <th>Walmart Price</th>
+            <th>CVS Price</th>
+            <th>Walgreens Price</th>
+            <th>RiteAid Price</th>
+            <th>Generic</th>
+          
+          </tr>
 
-        <% @medicines.each do |medicine| %>
-      <tr>
-        <td><%= medicine.name %></td>
-    <td><%= medicine.walmart_price  %></td>
-    <td><%= medicine.cvs_price  %></td>
-    <td><%= medicine.walgreens_price  %></td>
-    <td><%= medicine.riteaid_price %></td>
-      <td><%= medicine.generic %></td>
-      </tr>
-    <% end %>
-  </table> 
+        <% @medicines1.each do |medicine| %>
+          <tr>   
+        </td>
+            <td><%= medicine.name %></td>
+            <td><%= medicine.walmart_price  %></td>
+            <td><%= medicine.cvs_price  %></td>
+            <td><%= medicine.walgreens_price  %></td>
+            <td><%= medicine.riteaid_price %></td>
+              <td><%= medicine.generic %></td>
+          </tr>
+      <% end %>
+    </table> 
+
+
+  <h4>Medicine 2 Results</h4>
+
+  <% if @medicines2.blank? %>
+      <h4> There are no scholarships that match your query </h4>
+  <% else %>
+        <table class="table table-striped">
+          <tr>
+            <th>Name</th>
+            <th>Walmart Price</th>
+            <th>CVS Price</th>
+            <th>Walgreens Price</th>
+            <th>RiteAid Price</th>
+            <th>Generic</th>
+          </tr>
+        <% @medicines2.each do |medicine| %>
+        <tr>    
+          </td>
+              <td><%= medicine.name %></td>
+              <td><%= medicine.walmart_price  %></td>
+              <td><%= medicine.cvs_price  %></td>
+              <td><%= medicine.walgreens_price  %></td>
+              <td><%= medicine.riteaid_price %></td>
+                <td><%= medicine.generic %></td>
+                </tr>
+              <% end %>
+
+      </table> 
+  <% end %>
 <% end %>
 
+
+   
+  
+           

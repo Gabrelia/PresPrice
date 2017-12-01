@@ -5,8 +5,8 @@
 # Project name: PresPrice
 # Description: The app is intended to provide the cheapest price of a medicine to users
 # Filename: index.html.erb
-# Description: To provide search results for searched medicine
-# Last modified on: 11/10/17 -->
+# Description: To allow user to search for medicine through a form
+# Last modified on: 11/30/17 -->
 
 <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -18,17 +18,17 @@
 <div class="main">
   <div class="login">
     <div class="container">
-        <div id = "nav">
-            <a href = "searchbar">Search</a>
-        </div>
+
       <div id = "home">
   <h1>PresPrice</h1>
     <div class="form">
+           <!--Gives form path that form will be passing to-->
            <%= form_tag(search_path, :method => "get", id: "search-form") do %>
+           <!--Search parameter-->
             <%= text_field_tag :search, params[:search], placeholder: "Search medicines" %><br>
-            <%= submit_tag "Search", :name => nil %>
+            <%= submit_tag "Search", class: "buttoncolor", :name => nil %>
            <% end %>
-           <li><a href = "searchbar2">Search 2</a></li>
+           <li><a href = "searchbar2">Search Two Medications</a></li>
         </div>
   
     

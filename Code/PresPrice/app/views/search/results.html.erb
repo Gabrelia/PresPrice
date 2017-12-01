@@ -1,29 +1,36 @@
- <div id = "nav pull-right">
-      <li><a href = "searchbar">Search</a></li>
-  </div>
-<% if @medicines.blank? %>
-	<h4> There are no scholarships that match your query </h4>
-<% else %>
-  <table class="table table-striped">
-    <tr>
-      <th><%= sort_link "name" %></th>
-      <th><%= sort_link "walmart_price" %></th>
-      <th><%= sort_link "cvs_price" %></th>
-      <th><%= sort_link "walgreens_price" %></th>
-      <th><%= sort_link "riteaid_price" %></th>
-      <th><%= sort_link "generic" %></th>
-    </tr>
-    <% @medicines.each do |medicine| %>
-      <tr>
-      
-</td>
-	  <td><%= medicine.name %></td>
-    <td><%= medicine.walmart_price  %></td>
-	  <td><%= medicine.cvs_price  %></td>
-	  <td><%= medicine.walgreens_price  %></td>
-	  <td><%= medicine.riteaid_price %></td>
-      <td><%= medicine.generic %></td>
-      </tr>
-    <% end %>
-  </table> 
+  <!--# Name: Gabby Johnson
+# Course: CSC 415
+# Semester: Fall 2017
+# Instructor: Dr. Pulimood 
+# Project name: PresPrice
+# Description: The app is intended to provide the cheapest price of a medicine to users
+# Filename: results.html.erb
+# Description: Display results for ome parameter search term and all medicines found
+# Last modified on: 11/30/17-->
+  <% if @medicines.blank? %>
+  	<h4> There are no scholarships that match your query </h4>
+  <% else %>
+    <table class="table table-striped">
+          <tr>
+          <!--Column Headings-->
+              <th>Name</th>
+              <th>Walmart Price</th>
+              <th>CVS Price</th>
+              <th>Walgreens Price</th>
+              <th>RiteAid Price</th>
+              <th>Generic</th>
+          </tr>
+          <% @medicines.each do |medicine| %>
+            <tr>     
+        </td>
+        <!--Found Medicine values-->
+          	  <td><%= medicine.name %></td>
+              <td><%= medicine.walmart_price  %></td>
+          	  <td><%= medicine.cvs_price  %></td>
+          	  <td><%= medicine.walgreens_price  %></td>
+          	  <td><%= medicine.riteaid_price %></td>
+              <td><%= medicine.generic %></td>
+            </tr>
+      <% end %>
+    </table> 
 <% end %>
