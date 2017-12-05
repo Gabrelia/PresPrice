@@ -14,6 +14,10 @@ This will tell you what version you have installed.
 
 Next, download the PresPrice repository and change to that directory in your terminal. 
 
+Bundle Install:
+
+You will need to run "bundle install" in terminal to make sure all gems are installed.  Enter that in terminal now.
+
 Raking Databases:
 
 In order to access the medicine database for the app, you will need to run a couple of commands in terminal before running the server.
