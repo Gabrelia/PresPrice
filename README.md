@@ -14,4 +14,19 @@ This will tell you what version you have installed.
 
 Next, download the PresPrice repository and change to that directory in your terminal. 
 
+Raking Databases:
+
+In order to access the medicine database for the app, you will need to run a couple of commands in terminal before running the server.
+
+rake db:migrate
+
+rake db:seed
+
 After you have done this enter rails server into terminal and go to http://localhost:3000  in your browser.  You should now be able to access the site.  The homepage will be a blue screen with a login form.
+
+
+
+
+
+
+
